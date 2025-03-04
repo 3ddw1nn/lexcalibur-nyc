@@ -1,0 +1,24 @@
+{
+    "extends": "@apify/tsconfig",
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "esModuleInterop": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "types": ["node"],
+        "baseUrl": ".",
+        "paths": {
+            "*": ["./node_modules/*"]
+        },
+        "lib": ["ES2022", "DOM"]
+    },
+    "ts-node": {
+        "esm": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}
